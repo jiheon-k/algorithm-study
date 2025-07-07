@@ -1,3 +1,24 @@
+# =============================
+# 📂 macOS 빌드/시스템 파일 무시
+# =============================
+
+# macOS 시스템 파일
+.DS_Store
+
+# Xcode 및 Clang 디버그 심볼
+*.dSYM/
+*.xcworkspace
+*.xcuserdata
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+
+# Relocation files
+Relocations/
+
+# =============================
+# ⚙️ C/C++ 빌드 파일 무시
+# =============================
+
 # Prerequisites
 *.d
 
@@ -16,6 +37,7 @@
 
 # Debugger Files
 *.pdb
+*.dwo
 
 # Compiled Dynamic libraries
 *.so
@@ -37,5 +59,7 @@
 *.out
 *.app
 
-# debug information files
-*.dwo
+# =============================
+# 📝 VSCode 설정 무시
+# =============================
+.vscode/
